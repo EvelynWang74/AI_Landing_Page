@@ -1,0 +1,63 @@
+{
+  "meta": {
+    "pageTitle": "Evelyn Wang — Engineer & Human",
+    "description": "Firmware Engineer. Skier. Pole dancer. Gig goer. Book reader. Gluten-free adventurer. I will try everything once."
+  },
+  "hero": {
+    "eyebrow": "Firmware Engineer · Adventurer · Human",
+    "headline": "I will try\neverything\nonce.",
+    "subheadline": "I write the code that makes hardware think. The rest of the time I'm on a slope, at a gig, hanging from a pole, or deep in a book — gluten-free snack in hand."
+  },
+  "bio": {
+    "paragraphs": [
+      "Firmware engineer by training, curious human by nature. I spend my days writing low-level code that makes hardware think — and my evenings doing something entirely different. I'm a beginner pole dancer who surprised herself, an intermediate skier who chases powder when the season calls, and a regular at live gigs (five shows a year, at least). I read books, I used to draw, I once photographed galaxies.",
+      "I eat gluten-free — not by trend, but by necessity — and I'm always hunting for the restaurant that proves it doesn't have to mean boring. I'm a problem solver most of the time. The rest of the time, I'm just trying something new."
+    ]
+  },
+  "gallery": [
+    {
+      "id": 1,
+      "src": "assets/images/gallery/photo-01.jpg",
+      "alt": "Evelyn skiing down a slope",
+      "caption": "On the mountain"
+    },
+    {
+      "id": 2,
+      "src": "assets/images/gallery/photo-02.jpg",
+      "alt": "Evelyn pole dancing",
+      "caption": "Strength & surprise"
+    },
+    {
+      "id": 3,
+      "src": "assets/images/gallery/photo-03.jpg",
+      "alt": "Front row at a live gig",
+      "caption": "Live & loud"
+    },
+    {
+      "id": 4,
+      "src": "assets/images/gallery/photo-04.jpg",
+      "alt": "A gluten-free meal worth travelling for",
+      "caption": "GF & delicious"
+    },
+    {
+      "id": 5,
+      "src": "assets/images/gallery/photo-05.jpg",
+      "alt": "Evelyn travelling somewhere new",
+      "caption": "Always somewhere new"
+    },
+    {
+      "id": 6,
+      "src": "assets/images/gallery/photo-06.jpg",
+      "alt": "A candid moment",
+      "caption": "Just me"
+    }
+  ],
+  "social": {
+    "linkedin": "https://www.linkedin.com/in/iwen-evelyn-wang-75938924/",
+    "instagram": "https://www.instagram.com/evelynwang74/",
+    "facebook": "PLACEHOLDER — add your Facebook URL here"
+  },
+  "footer": {
+    "credit": "Evelyn Wang — Made with intention."
+  }
+}
