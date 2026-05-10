@@ -119,29 +119,54 @@
   ============================================================ -->
   <section id="professional" class="professional" aria-label="Professional profile">
 
-    <div class="professional__inner">
+    <div class="professional__split">
 
-      <header class="section-header section-header--center reveal">
-        <h2 class="section-header__title">The Professional Side</h2>
-      </header>
-
-      <div class="professional__bio reveal">
-        <p class="bio__text">
-          Firmware engineer by training, curious human by nature. I spend my days
-          writing low-level code that makes hardware think — and my evenings doing
-          something entirely different. I'm a beginner pole dancer who surprised
-          herself, an intermediate skier who chases powder when the season calls,
-          and a regular at live gigs (five shows a year, at least). I read books,
-          I used to draw, I once photographed galaxies.
-        </p>
-        <p class="bio__text">
-          I eat gluten-free — not by trend, but by necessity — and I'm always
-          hunting for the restaurant that proves it doesn't have to mean boring.
-          I'm a problem solver most of the time. The rest of the time,
-          I'm just trying something new.
-        </p>
+      <!-- Left: Professional bio -->
+      <div class="professional__col professional__col--left reveal">
+        <header class="section-header">
+          <h2 class="section-header__title">The Professional Side</h2>
+        </header>
+        <div class="professional__bio">
+          <p class="bio__text">
+            Firmware engineer by training, curious human by nature. I spend my days
+            writing low-level code that makes hardware think — and my evenings doing
+            something entirely different. I'm a beginner pole dancer who surprised
+            herself, an intermediate skier who chases powder when the season calls,
+            and a regular at live gigs (five shows a year, at least). I read books,
+            I used to draw, I once photographed galaxies.
+          </p>
+          <p class="bio__text">
+            I eat gluten-free — not by trend, but by necessity — and I'm always
+            hunting for the restaurant that proves it doesn't have to mean boring.
+            I'm a problem solver most of the time. The rest of the time,
+            I'm just trying something new.
+          </p>
+        </div>
       </div>
 
+      <!-- Right: AI Projects -->
+      <div class="professional__col professional__col--right reveal">
+        <header class="section-header">
+          <h2 class="section-header__title">AI Projects</h2>
+        </header>
+        <div class="project-list">
+
+          <div class="project-card">
+            <div class="project-card__body">
+              <h3 class="project-card__title">Project Name 1</h3>
+              <p class="project-card__desc">Short description or GIF coming soon.</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card__body">
+              <h3 class="project-card__title">Project Name 2</h3>
+              <p class="project-card__desc">Short description or GIF coming soon.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
     </div>
 
@@ -155,76 +180,14 @@
 
     <header class="section-header reveal">
       <h2 class="section-header__title">Beyond the Terminal</h2>
-      <p class="section-header__sub">Six frames. One life.</p>
     </header>
 
-    <div class="gallery__carousel reveal">
-
-      <!-- Large main image -->
-      <figure class="gallery__main">
-        <img
-          class="gallery__main-img"
-          src="assets/images/gallery/photo-02.JPG"
-          alt="Skiing — a big part of Evelyn's Winter life"
-          loading="lazy"
-        />
-        <figcaption class="gallery__main-caption">Winter is my season</figcaption>
-        <span class="gallery__counter" aria-live="polite">1 / 6</span>
-      </figure>
-
-      <!-- Thumbnail strip -->
-      <div class="gallery__thumbs" role="list" aria-label="Gallery thumbnails">
-
-        <button class="gallery__thumb is-active" role="listitem"
-          data-src="assets/images/gallery/photo-02.JPG"
-          data-alt="Skiing — a big part of Evelyn's Winter life"
-          data-caption="Winter is my season"
-          aria-label="Photo 1 — Winter is my season" aria-current="true">
-          <img src="assets/images/gallery/photo-02.JPG" alt="" loading="lazy" />
-        </button>
-
-        <button class="gallery__thumb" role="listitem"
-          data-src="assets/images/gallery/photo-06.JPG"
-          data-alt="Evelyn — beginner pole fitness enthusiast"
-          data-caption="Beginner &amp; proud"
-          aria-label="Photo 2 — Beginner and proud">
-          <img src="assets/images/gallery/photo-06.JPG" alt="" loading="lazy" />
-        </button>
-
-        <button class="gallery__thumb" role="listitem"
-          data-src="assets/images/gallery/photo-03.jpeg"
-          data-alt="Evelyn at a live concert — 5 gigs a year"
-          data-caption="Live &amp; loud"
-          aria-label="Photo 3 — Live and loud">
-          <img src="assets/images/gallery/photo-03.jpeg" alt="" loading="lazy" />
-        </button>
-
-        <button class="gallery__thumb" role="listitem"
-          data-src="assets/images/gallery/photo-01.jpeg"
-          data-alt="Coming soon"
-          data-caption="More soon"
-          aria-label="Photo 4 — More soon">
-          <img src="assets/images/gallery/photo-01.jpeg" alt="" loading="lazy" />
-        </button>
-
-        <button class="gallery__thumb" role="listitem"
-          data-src="assets/images/gallery/photo-05.jpeg"
-          data-alt="Evelyn fixing something that doesn't work"
-          data-caption="If it's broken, I'll fix it"
-          aria-label="Photo 5 — If it's broken, I'll fix it">
-          <img src="assets/images/gallery/photo-05.jpeg" alt="" loading="lazy" />
-        </button>
-
-        <button class="gallery__thumb" role="listitem"
-          data-src="assets/images/gallery/photo-04.jpeg"
-          data-alt="Coming soon"
-          data-caption="More soon"
-          aria-label="Photo 6 — More soon">
-          <img src="assets/images/gallery/photo-04.jpeg" alt="" loading="lazy" />
-        </button>
-
-      </div>
-
+    <div class="gallery__video-wrap reveal">
+      <img
+        class="gallery__video"
+        src="assets/images/gallery/image.gif"
+        alt="Beyond the Terminal — Evelyn in motion"
+      />
     </div>
 
   </section>
