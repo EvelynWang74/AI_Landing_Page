@@ -1,0 +1,366 @@
+/* ================================================================
+   tokens.css — Design token system
+
+   THREE VIBES — only ONE block should be active at a time.
+   To switch vibe: comment out the active block, uncomment another.
+
+   VIBE A — Clean Minimalist  ← ACTIVE
+   VIBE B — Bold Editorial    ← comment in to activate
+   VIBE C — Warm Human        ← comment in to activate
+================================================================ */
+
+
+/* ----------------------------------------------------------------
+   VIBE A — Soft Editorial  (formerly "Clean Minimalist")
+   Palette: warm white / near-black / sage teal accent
+   Type:    Cormorant Garamond (display) + DM Sans (body)
+   Feel:    Calm, editorial, Pixieset-inspired elegance
+   Inspiration: Pixieset.com — #48AE92 teal, 1.8 leading, tight italic headlines
+---------------------------------------------------------------- */
+:root {
+  /* --- Color --- */
+  --color-bg:           #FAFAF8;   /* warm white canvas            */
+  --color-surface:      #FFFFFF;   /* card / section backgrounds   */
+  --color-border:       #E8E8E4;   /* subtle dividers              */
+
+  --color-ink:          #1D1D1D;   /* primary text — near-black    */
+  --color-ink-muted:    #888888;   /* secondary / caption text     */
+  --color-ink-ghost:    #C0C0BA;   /* placeholder / disabled       */
+
+  --color-accent:       #48AE92;   /* sage teal — Pixieset-derived */
+  --color-accent-hover: #3A9480;
+  --color-accent-text:  #FFFFFF;   /* text on accent bg            */
+
+  --color-hero-bg:      #FAFAF8;   /* hero section — white canvas  */
+  --color-hero-text:    #1D1D1D;
+  --color-hero-muted:   #888888;
+
+  /* --- Typography --- */
+  --font-sans:    'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-serif:   'Cormorant Garamond', Georgia, serif;
+
+  --font-display: var(--font-serif);   /* Cormorant for headlines  */
+  --font-body:    var(--font-sans);    /* DM Sans for body copy    */
+
+  --text-xs:   0.75rem;    /*  12px */
+  --text-sm:   0.875rem;   /*  14px */
+  --text-base: 1rem;       /*  16px */
+  --text-lg:   1.125rem;   /*  18px */
+  --text-xl:   1.25rem;    /*  20px */
+  --text-2xl:  1.5rem;     /*  24px */
+  --text-3xl:  1.875rem;   /*  30px */
+  --text-4xl:  2.25rem;    /*  36px */
+  --text-5xl:  3rem;       /*  48px */
+  --text-6xl:  3.75rem;    /*  60px */
+  --text-7xl:  4.5rem;     /*  72px */
+
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  --leading-tight:  1.05;   /* Cormorant headline — very tight   */
+  --leading-snug:   1.25;
+  --leading-normal: 1.5;
+  --leading-loose:  1.8;    /* Pixieset body rhythm              */
+
+  --tracking-tight:  -0.05em;   /* Cormorant display tight        */
+  --tracking-normal:  0;
+  --tracking-wide:    0.06em;
+  --tracking-wider:   0.14em;   /* DM Sans label uppercase        */
+
+  /* --- Spacing --- */
+  --space-1:   0.25rem;   /*  4px  */
+  --space-2:   0.5rem;    /*  8px  */
+  --space-3:   0.75rem;   /*  12px */
+  --space-4:   1rem;      /*  16px */
+  --space-5:   1.25rem;   /*  20px */
+  --space-6:   1.5rem;    /*  24px */
+  --space-8:   2rem;      /*  32px */
+  --space-10:  2.5rem;    /*  40px */
+  --space-12:  3rem;      /*  48px */
+  --space-16:  4rem;      /*  64px */
+  --space-20:  5rem;      /*  80px */
+  --space-24:  6rem;      /*  96px */
+  --space-32:  8rem;      /* 128px */
+
+  /* --- Layout --- */
+  --max-width:        1200px;
+  --content-padding:  var(--space-6);
+
+  /* --- Radii --- */
+  --radius-sm:   2px;
+  --radius-md:   4px;
+  --radius-lg:   8px;
+  --radius-xl:   16px;
+  --radius-full: 9999px;
+
+  /* --- Shadows --- */
+  --shadow-sm:  0 1px 3px rgba(29,29,29,0.07), 0 1px 2px rgba(29,29,29,0.04);
+  --shadow-md:  0 4px 16px rgba(29,29,29,0.09), 0 2px 4px rgba(29,29,29,0.05);
+  --shadow-lg:  0 12px 40px rgba(29,29,29,0.11), 0 4px 8px rgba(29,29,29,0.07);
+
+  /* --- Transitions --- */
+  --ease-default:  cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-in:       cubic-bezier(0.4, 0, 1, 1);
+  --ease-out:      cubic-bezier(0, 0, 0.2, 1);
+  --ease-spring:   cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --duration-fast:   150ms;
+  --duration-base:   250ms;
+  --duration-slow:   400ms;
+
+  /* --- Hero-specific --- */
+  --hero-headline-size:  var(--text-7xl);
+  --hero-headline-style: italic;          /* Cormorant italic — signature style */
+  --hero-em-color:       var(--color-accent);
+
+  /* --- Gallery --- */
+  --gallery-gap:    var(--space-3);
+  --gallery-radius: var(--radius-md);
+  --gallery-overlay-bg:  rgba(29,29,29,0.52);
+
+  /* --- Button --- */
+  --btn-radius:      var(--radius-sm);
+  --btn-padding-y:   var(--space-3);
+  --btn-padding-x:   var(--space-8);
+  --btn-font-size:   var(--text-sm);
+  --btn-weight:      var(--weight-semibold);
+  --btn-tracking:    var(--tracking-wide);
+
+  /* --- Floating bar --- */
+  --floating-bar-bg:     rgba(250,250,248,0.94);
+  --floating-bar-shadow: var(--shadow-lg);
+  --floating-bar-icon:   var(--color-ink);
+}
+
+
+/* ----------------------------------------------------------------
+   VIBE B — Bold Editorial
+   Palette: deep navy / warm cream / electric coral accent
+   Type:    Playfair Display headlines + Inter body
+   Feel:    Magazine cover, high contrast, editorial authority
+---------------------------------------------------------------- */
+/*
+:root {
+  --color-bg:           #F5F0E8;
+  --color-surface:      #FFFDF7;
+  --color-border:       #DDD5C0;
+
+  --color-ink:          #0D1B2A;
+  --color-ink-muted:    #5A5040;
+  --color-ink-ghost:    #A89F8C;
+
+  --color-accent:       #E63946;
+  --color-accent-hover: #C1121F;
+  --color-accent-text:  #FFFFFF;
+
+  --color-hero-bg:      #0D1B2A;
+  --color-hero-text:    #F5F0E8;
+  --color-hero-muted:   #8B9EB5;
+
+  --font-sans:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif:   'Playfair Display', Georgia, serif;
+  --font-display: var(--font-serif);
+  --font-body:    var(--font-sans);
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+  --text-6xl:  3.75rem;
+  --text-7xl:  4.5rem;
+
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  --leading-tight:  1.05;
+  --leading-snug:   1.25;
+  --leading-normal: 1.6;
+  --leading-loose:  1.85;
+
+  --tracking-tight:  -0.02em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.05em;
+  --tracking-wider:   0.10em;
+
+  --space-1:   0.25rem;
+  --space-2:   0.5rem;
+  --space-3:   0.75rem;
+  --space-4:   1rem;
+  --space-5:   1.25rem;
+  --space-6:   1.5rem;
+  --space-8:   2rem;
+  --space-10:  2.5rem;
+  --space-12:  3rem;
+  --space-16:  4rem;
+  --space-20:  5rem;
+  --space-24:  6rem;
+  --space-32:  8rem;
+
+  --max-width:        1200px;
+  --content-padding:  var(--space-6);
+
+  --radius-sm:   2px;
+  --radius-md:   4px;
+  --radius-lg:   8px;
+  --radius-xl:   12px;
+  --radius-full: 9999px;
+
+  --shadow-sm:  0 1px 3px rgba(13,27,42,0.10);
+  --shadow-md:  0 4px 16px rgba(13,27,42,0.14);
+  --shadow-lg:  0 12px 40px rgba(13,27,42,0.18);
+
+  --ease-default:  cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-in:       cubic-bezier(0.4, 0, 1, 1);
+  --ease-out:      cubic-bezier(0, 0, 0.2, 1);
+  --ease-spring:   cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --duration-fast:   150ms;
+  --duration-base:   250ms;
+  --duration-slow:   400ms;
+
+  --hero-headline-size:  var(--text-7xl);
+  --hero-headline-style: italic;
+  --hero-em-color:       var(--color-accent);
+
+  --gallery-gap:    var(--space-2);
+  --gallery-radius: var(--radius-sm);
+  --gallery-overlay-bg: rgba(13,27,42,0.60);
+
+  --btn-radius:      var(--radius-sm);
+  --btn-padding-y:   var(--space-3);
+  --btn-padding-x:   var(--space-8);
+  --btn-font-size:   var(--text-sm);
+  --btn-weight:      var(--weight-semibold);
+  --btn-tracking:    var(--tracking-wider);
+
+  --floating-bar-bg:     rgba(13,27,42,0.92);
+  --floating-bar-shadow: 0 4px 24px rgba(13,27,42,0.30);
+  --floating-bar-icon:   #F5F0E8;
+}
+*/
+
+
+/* ----------------------------------------------------------------
+   VIBE C — Warm Human
+   Palette: warm sand / terracotta / forest green accent
+   Type:    Inter rounded — approachable, lifestyle-brand warmth
+   Feel:    Welcoming, personal, like a favourite coffee-table book
+---------------------------------------------------------------- */
+/*
+:root {
+  --color-bg:           #FAF6F1;
+  --color-surface:      #FFFFFF;
+  --color-border:       #E8DDD0;
+
+  --color-ink:          #2C2416;
+  --color-ink-muted:    #7A6A56;
+  --color-ink-ghost:    #B8A898;
+
+  --color-accent:       #2D6A4F;
+  --color-accent-hover: #1B4332;
+  --color-accent-text:  #FFFFFF;
+
+  --color-hero-bg:      #C9784A;
+  --color-hero-text:    #FAF6F1;
+  --color-hero-muted:   #F0D5C0;
+
+  --font-sans:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif:   'Playfair Display', Georgia, serif;
+  --font-display: var(--font-sans);
+  --font-body:    var(--font-sans);
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.875rem;
+  --text-base: 1rem;
+  --text-lg:   1.125rem;
+  --text-xl:   1.25rem;
+  --text-2xl:  1.5rem;
+  --text-3xl:  1.875rem;
+  --text-4xl:  2.25rem;
+  --text-5xl:  3rem;
+  --text-6xl:  3.75rem;
+  --text-7xl:  4.5rem;
+
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  --leading-tight:  1.15;
+  --leading-snug:   1.35;
+  --leading-normal: 1.65;
+  --leading-loose:  1.9;
+
+  --tracking-tight:  -0.01em;
+  --tracking-normal:  0;
+  --tracking-wide:    0.04em;
+  --tracking-wider:   0.08em;
+
+  --space-1:   0.25rem;
+  --space-2:   0.5rem;
+  --space-3:   0.75rem;
+  --space-4:   1rem;
+  --space-5:   1.25rem;
+  --space-6:   1.5rem;
+  --space-8:   2rem;
+  --space-10:  2.5rem;
+  --space-12:  3rem;
+  --space-16:  4rem;
+  --space-20:  5rem;
+  --space-24:  6rem;
+  --space-32:  8rem;
+
+  --max-width:        1200px;
+  --content-padding:  var(--space-6);
+
+  --radius-sm:   8px;
+  --radius-md:   16px;
+  --radius-lg:   24px;
+  --radius-xl:   32px;
+  --radius-full: 9999px;
+
+  --shadow-sm:  0 2px 8px rgba(44,36,22,0.08);
+  --shadow-md:  0 6px 20px rgba(44,36,22,0.10);
+  --shadow-lg:  0 16px 48px rgba(44,36,22,0.12);
+
+  --ease-default:  cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-in:       cubic-bezier(0.4, 0, 1, 1);
+  --ease-out:      cubic-bezier(0, 0, 0.2, 1);
+  --ease-spring:   cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --duration-fast:   150ms;
+  --duration-base:   300ms;
+  --duration-slow:   500ms;
+
+  --hero-headline-size:  var(--text-6xl);
+  --hero-headline-style: normal;
+  --hero-em-color:       #FAF6F1;
+
+  --gallery-gap:    var(--space-4);
+  --gallery-radius: var(--radius-lg);
+  --gallery-overlay-bg: rgba(44,36,22,0.50);
+
+  --btn-radius:      var(--radius-full);
+  --btn-padding-y:   var(--space-4);
+  --btn-padding-x:   var(--space-10);
+  --btn-font-size:   var(--text-sm);
+  --btn-weight:      var(--weight-medium);
+  --btn-tracking:    var(--tracking-wide);
+
+  --floating-bar-bg:     rgba(250,246,241,0.94);
+  --floating-bar-shadow: 0 4px 24px rgba(44,36,22,0.14);
+  --floating-bar-icon:   var(--color-ink);
+}
+*/
